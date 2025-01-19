@@ -563,16 +563,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -660,10 +650,6 @@ video {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
 }
 
-.fill-white {
-  fill: #fff;
-}
-
 .px-60 {
   padding-left: 15rem;
   padding-right: 15rem;
@@ -696,11 +682,6 @@ video {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.hover\:bg-zinc-900:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-zinc-800:hover {
