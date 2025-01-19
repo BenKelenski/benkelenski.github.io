@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
