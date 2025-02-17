@@ -521,29 +521,26 @@
   .relative {
     position: relative;
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
-  }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
   }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
-  }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
   }
   .flex {
     display: flex;
@@ -555,20 +552,83 @@
     width: calc(var(--spacing) * 16);
     height: calc(var(--spacing) * 16);
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
   .h-6 {
     height: calc(var(--spacing) * 6);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-45 {
+    height: calc(var(--spacing) * 45);
+  }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
+  .h-81 {
+    height: calc(var(--spacing) * 81);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-45 {
+    width: calc(var(--spacing) * 45);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-81 {
+    width: calc(var(--spacing) * 81);
+  }
+  .w-82 {
+    width: calc(var(--spacing) * 82);
+  }
+  .w-83 {
+    width: calc(var(--spacing) * 83);
+  }
+  .w-84 {
+    width: calc(var(--spacing) * 84);
+  }
+  .w-85 {
+    width: calc(var(--spacing) * 85);
+  }
   .w-full {
     width: 100%;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -588,6 +648,9 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
@@ -600,8 +663,34 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-black {
+    border-color: var(--color-black);
+  }
+  .border-gray-700 {
+    border-color: var(--color-gray-700);
+  }
+  .border-gray-800 {
+    border-color: var(--color-gray-800);
+  }
+  .border-slate-800 {
+    border-color: var(--color-slate-800);
+  }
+  .border-slate-900 {
+    border-color: var(--color-slate-900);
+  }
   .bg-neutral-900 {
     background-color: var(--color-neutral-900);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .px-60 {
     padding-inline: calc(var(--spacing) * 60);
@@ -614,17 +703,31 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
   }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-zinc-500 {
+    color: var(--color-zinc-500);
+  }
+  .hue-rotate-180 {
+    --tw-hue-rotate: hue-rotate(180deg);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-all {
     transition-property: all;
@@ -652,10 +755,19 @@
       }
     }
   }
-  .lg\:text-3xl {
+  .md\:max-w-xs {
+    @media (width >= 48rem) {
+      max-width: var(--container-xs);
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:max-w-none {
     @media (width >= 64rem) {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
+      max-width: none;
     }
   }
   .lg\:text-4xl {
@@ -672,6 +784,11 @@
   .dark\:text-zinc-100 {
     @media (prefers-color-scheme: dark) {
       color: var(--color-zinc-100);
+    }
+  }
+  .dark\:text-zinc-400 {
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-zinc-400);
     }
   }
   .dark\:ring-white\/10 {
@@ -711,11 +828,56 @@
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
   syntax: "*";
   inherits: false;
 }
