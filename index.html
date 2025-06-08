@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ben Kelenski: Software Engineer</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header>
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="toggle-dark-mode">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <h1>Ben Kelenski</h1>
+    <p class="header-subtitle">Software Engineer</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I’m a software engineer with a passion for building scalable web applications and engaging user experiences. With
+        a background in full-stack development, I’ve worked on everything from APIs to front-end interfaces.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Project One</h3>
+        <p>A full-stack application built with React and Node.js to manage tasks and deadlines.</p>
+    </div>
+    <div class="project">
+        <h3>Project Two</h3>
+        <p>An open-source browser extension for productivity and tab management.</p>
+    </div>
+    <div class="project">
+        <h3>Project Three</h3>
+        <p>A data visualization dashboard using D3.js and REST APIs to track real-time metrics.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p class="contact">Email: <a href="mailto:benjamin.kelenski@gmail.com">benjamin.kelenski@gmail.com</a></p>
+    <p class="contact">LinkedIn: <a href="https://www.linkedin.com/in/benjamin-kelenski-021410169/" target="_blank">linkedin.com/in/benjamin-kelenski/</a>
+    </p>
+    <p class="contact">GitHub: <a href="https://github.com/BenKelenski" target="_blank">github.com/BenKelenski</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Benjamin Kelenski. All rights reserved.</p>
+</footer>
+<script>
+    const toggle = document.getElementById('toggle-dark-mode');
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Apply dark mode if user saved it, or if system prefers dark and there's no saved preference
+    const shouldUseDark = savedTheme === 'dark' || (!savedTheme && systemPrefersDark);
+    if (shouldUseDark) {
+        document.body.classList.add('dark-mode');
+        toggle.checked = true;
+    } else {
+        document.body.classList.remove('dark-mode');
+        toggle.checked = false;
+    }
+
+    // Toggle theme on change and store preference
+    toggle.addEventListener('change', () => {
+        if (toggle.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+
+</body>
+</html>
